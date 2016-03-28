@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+function ajouteLigne (){
+
+clone = document.getElementById("a_cloner").cloneNode(true);
+document.getElementById("tab").appendChild (clone);
+
+}
+
+</script>
+
+
+    <form action="cible.php" method="post">
+        <table id="tab">
+   <tr id="a_cloner">
+      <td><label>Indicateur :</label><input type="text" name="indic[]" /></td>
+   </tr>
+        </table>
+  
+  
+  <input type="submit" value="Valider" />
+    </form>
+
+<a href="#" onclick="ajouteLigne();">Cliquez pour ajouter du texte"</a> 
